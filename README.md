@@ -1,2 +1,2 @@
 # datadazzlers
-Frontend of a school management system written in HTML, CSS, Javascript
+A school database management system using MySQL, php, HTML and CSS.

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Dazzlers Admin</title>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="stylesheet" href="view.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+              <!--code for the sidebar navigation-->
+              <input type="checkbox" id="nav-toggle">
+              <div class="sidebar">
+                <!--code for the icon near the sidebar name-->
+                <div class="sidebar-brand">
+                  <h2><span class="las la-university"></span><span>Data Dazzlers</span></h2>
+                </div>
+                  <!--the sidebar itself with the respective links-->
+                  <div class="sidebar-menu">
+                    <ul>
+                      <li>
+                        <a href="dash.html" class="active"><span class="las la-igloo"></span>
+                        <span>Dashboard</span></a>
+                      </li>
+                      <li>
+                        <div class="dropdown">
+                          <a class="dropbtn" onclick="toggleDropdown('studentDropdown')" onclick="toggleActive(this)"> <!-- Added onclick event -->
+                            <span class="las la-users"></span><span>Student</span>
+                          </a>
+                          <div class="dropdown-menu" id="studentDropdown" > <!-- Dropdown content -->
+                            <a href="session.html">Academic Session</a>
+                            <a href="addstu.html">Create Student</a>
+                            <a href="studentinfo.html">Student Info</a>
+                            <a href="score.html">Student Scoresheet</a>
+                          </div>
+                        </div>
+                      </li> 
+                      <li>
+                        <div class="dropdown">
+                          <a class="dropbtn" onclick="toggleDropdown('lecturerDropdown')">
+                            <span class="las la-user-circle"></span><span>Lecturer</span>
+                          </a>
+                          <div class="dropdown-menu" id="lecturerDropdown">
+                            <a href="addlec.html">Add Lecturer</a>
+                            <a href="lecinfo.html">Lecturer Info</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown">
+                          <a class="dropbtn" onclick="toggleDropdown('unitDropdown')">
+                            <span class="las la-user-circle"></span><span>Units</span>
+                          </a>
+                          <div class="dropdown-menu" id="unitDropdown">
+                            <a href="unit.html">Add Unit</a>
+                            <a href="unitinfo.html">Unit Info</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="test.html"><span class="las la-receipt"></span>
+                        <span>Test</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  </div>
+          <!--the main content with the search bar option for the header section-->
+      <div class="main-content">
+          <header>
+            <div class="header-title">
+              <h2>
+                <label for="">
+                  <span class="las la-bars"></span>
+                </label>
+              </h2>
+            </div>
+            <div class="search-wrapper">
+              <span class="las la-search"></span>
+              <input type="search" placeholder="Search here" />
+            </div>
+                      <!--current user icon and name-->
+            <div class="user-wrapper">
+              <img src="setting.png" width="30px" height="30px" alt="">
+                <div>
+                  <h4>Dazz</h4>
+                  <small>Super Admin</small>
+                </div>
+            </div>
+          </header>
+
+          <!--making the student info table-->
+          <main>
+            <div>
+            <h2>
+                <span class="las la-receipt"></span>
+                Student Scoresheet
+            </h2>
+        </div>
+            <div class="recent-grid">
+                <div class="units">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-resposive">
+                        <table width="100%">
+                          <thead>
+                            <tr>
+                              <td>Student ID</td>
+                              <td>Name</td>
+                              <td>CAT</td>
+                              <td>Exam</td>
+                              <td>Average</td>
+                              <td></td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Nicole</td>
+                                <td>
+                                20
+                                </td>
+                                <td>
+                                    30
+                                </td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Nicole</td>
+                                  <td>
+                                  20
+                                  </td>
+                                  <td>
+                                      30
+                                  </td>
+                                  <td>25</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>Nicole</td>
+                                  <td>
+                                  20
+                                  </td>
+                                  <td>
+                                      30
+                                  </td>
+                                  <td>25</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>Nicole</td>
+                                  <td>
+                                  20
+                                  </td>
+                                  <td>
+                                      30
+                                  </td>
+                                  <td>25</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>Nicole</td>
+                                  <td>
+                                  20
+                                  </td>
+                                  <td>
+                                      30
+                                  </td>
+                                  <td>25</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>Nicole</td>
+                                  <td>
+                                  20
+                                  </td>
+                                  <td>
+                                      30
+                                  </td>
+                                  <td>25</td>
+                              </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </main>
